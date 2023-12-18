@@ -1,0 +1,25 @@
+{
+  "name": "@e-chan1007/uec-map",
+  "version": "1.0.0",
+  "description": "The map resources of the University of Electro-Communications(Unofficial)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/e-chan1007/uec-map.git"
+  },
+  "scripts": {
+    "document": "pnpm -F @e-chan1007/uec-map-docs",
+    "build": "jiti scripts/build_map.mts"
+  },
+  "author": {
+    "name": "e-chan1007",
+    "email": "echan041007@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@e-chan1007/eslint-config-base": "^1.1.8",
+    "@types/geojson": "^7946.0.13",
+    "flatgeobuf": "^3.27.1",
+    "geojson": "^0.5.0",
+    "jiti": "^1.21.0"
+  }
+}
