@@ -1,48 +1,75 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
+
 
 import { Popup } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import MapLibre, { Layer, Marker, Source } from "react-map-gl/maplibre";
+import { createRoot } from "react-dom/client";
+import MapLibre, { Layer, GeolocateControl, Source } from "react-map-gl/maplibre";
 
 import styles from "./Map.module.css";
 
-import type { Feature, FeatureCollection, Point, Polygon } from "geojson";
+import type { Feature } from "geojson";
+import type { DataDrivenPropertyValueSpecification } from "maplibre-gl";
 import type { MapLayerMouseEvent, MapRef } from "react-map-gl/maplibre";
 
 
 interface MapLayer {
-  id?: string;
-  url: string;
-  border?: string;
-  color: string;
+  type: string;
+  border?: string | DataDrivenPropertyValueSpecification<string>;
+  minzoom?: number;
+  maxzoom?: number;
+  color: string | DataDrivenPropertyValueSpecification<string>;
 }
 
 export default function Map() {
-  const [externals, setExternals] = useState<FeatureCollection<Point>>({ "type": "FeatureCollection", "features": [] });
   const mapRef = useRef<MapRef>(null);
   const mapLayers: MapLayer[] = [
     {
-      url: "map/area.geojson",
-      color: "#ffffffaa"
+      type: "area",
+      minzoom: 12,
+      color: [
+        "step",
+        ["zoom"],
+        "transparent",
+        12,
+        "#17288b22",
+        14,
+        "#ffffff"
+      ],
+      border: [
+        "step",
+        ["zoom"],
+        "transparent",
+        12,
+        "#17288b"
+      ]
     },
     {
-      url: "map/building_sub.geojson",
-      color: "#17288b44"
+      type: "path",
+      color: "#aaaaaa",
+      minzoom: 14
     },
     {
-      url: "map/road.geojson",
-      color: "#aaaaaa"
+      type: "road",
+      color: "#777777",
+      minzoom: 17
     },
     {
-      url: "map/symbol.geojson",
-      color: "#17288b"
+      type: "building_sub",
+      color: "#00afdd",
+      minzoom: 15
     },
     {
-      id: "building",
-      url: "map/building.geojson",
-      color: "#17288b"
+      type: "symbol",
+      color: "#00afdd",
+      minzoom: 15
+    },
+    {
+      type: "building",
+      color: "#17288b",
+      minzoom: 14
     }
   ];
 
@@ -52,25 +79,19 @@ export default function Map() {
 
   const onClick = useCallback((event: MapLayerMouseEvent) => {
     const feature = event.features?.[0] as Feature | undefined;
-    if (!feature) return;
-    let latlng = { lng: 0, lat: 0 };
-    if (feature.geometry.type === "Polygon") {
-      latlng = { lng: feature.geometry.coordinates[0][0][0], lat: feature.geometry.coordinates[0][0][1] };
-    } else if (feature.geometry.type === "MultiPolygon") {
-      latlng = { lng: feature.geometry.coordinates[0][0][0][0], lat: feature.geometry.coordinates[0][0][0][1] };
-    } else if (feature.geometry.type === "Point") {
-      latlng = { lng: feature.geometry.coordinates[0], lat: feature.geometry.coordinates[1] };
-    } else {
-      return;
-    }
-    new Popup()
-      .setLngLat(latlng)
-      .setText(feature.properties!.name)
-      .addTo(mapRef.current!.getMap());
-  }, []);
-
-  useEffect(() => {
-    fetch("map/external.json").then(res => res.json()).then(setExternals);
+    if (!feature?.properties?.center) return;
+    const lnglat: [number, number] = JSON.parse(feature.properties?.center);
+    const popup = new Popup();
+    popup.setLngLat(lnglat);
+    popup.setText("");
+    popup.addTo(mapRef.current!.getMap());
+    const root = document.createElement("div");
+    const el = popup._content;
+    el.appendChild(root);
+    createRoot(root).render(<>
+      <h1>{feature.properties.name}</h1>
+      <pre className={styles["map-popup-pre"]}>{JSON.stringify(feature.properties, null, 2)}</pre>
+    </>);
   }, []);
 
   return (
@@ -82,41 +103,54 @@ export default function Map() {
           latitude: 35.657511,
           zoom: 16
         }}
-        interactiveLayerIds={["building", "building-ext", "external"]}
-        maxZoom={19}
+        interactiveLayerIds={["building", "building_sub", "symbol", "external", "gate"]}
+        maxZoom={20}
         cursor={cursor}
         onClick={onClick}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
         mapStyle="style.json"
       >
-        {mapLayers.map(({ id, url, color }) => (
-          <Source key={url} type="geojson" data={url}>
+        <GeolocateControl positionOptions={{ enableHighAccuracy: true }} trackUserLocation/>
+        <Source type="geojson" data="map/all.geojson">
+          {mapLayers.map(({ type, border, minzoom, maxzoom, color }) => (
             <Layer
-              id={id}
+              id={type}
+              key={type}
               type="fill"
-              paint={{ "fill-color": color }} />
-            { id === "building" && (
-              <Layer
-                id={`${id}-ext`}
-                type="fill-extrusion"
-                minzoom={18}
-                paint={{
-                  "fill-extrusion-color": "#17288b",
-                  "fill-extrusion-height": { "type": "interval", "property": "floors", "stops": new Array(10).fill([]).map((_, i) => [i + 1, (i + 1) * 5]) },
-                  "fill-extrusion-opacity": 1
-                }}/>
-            )}
-          </Source>
-        ))}
-        {
-          externals.features.map((feature: Feature<Point>) => (
-            <Marker
-              latitude={ feature.geometry.coordinates[1] }
-              longitude={ feature.geometry.coordinates[0] }
-              key={ feature.properties!.id } anchor="bottom" />
-          ))
-        }
+              minzoom={minzoom ?? 0}
+              maxzoom={maxzoom ?? 21}
+              filter={["==", ["get", "type"], type]}
+              paint={{ "fill-color": color ?? "transparent", "fill-outline-color": border ?? "transparent" }} />
+          ))}
+          <Layer
+            id="gate"
+            type="circle"
+            filter={["==", ["get", "type"], "gate"]}
+            minzoom={17}
+            paint={{ "circle-color": "#00afdd", "circle-radius": 15 }}/>
+          <Layer
+            id="external"
+            type="circle"
+            filter={["==", ["get", "type"], "external"]}
+            paint={{ "circle-color": "#00afdd", "circle-radius": 15 }}/>
+          <Layer
+            id="extrusion"
+            type="fill-extrusion"
+            minzoom={18}
+            filter={["in", "type", "building", "building_sub"]}
+            paint={{
+              "fill-extrusion-color": {
+                "type": "categorical",
+                "property": "type",
+                "default": "#17288b",
+                "stops": [
+                  ["building_sub", "#00afdd"]
+                ]
+              },
+              "fill-extrusion-height": { "type": "categorical", "property": "floors", "stops": new Array(11).fill([]).map((_, i) => [i, i * 7]) }
+            }}/>
+        </Source>
       </MapLibre>
     </div>
   );

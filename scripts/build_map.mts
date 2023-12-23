@@ -1,20 +1,16 @@
 import { geojson } from "flatgeobuf";
 import type { Feature, FeatureCollection } from "geojson";
 import allData from "../all.json";
-import { mkdir, writeFile } from "fs/promises";
+import { mkdir, rm, writeFile } from "fs/promises";
 
 (async () => {
   const collectionTypes = [
-    "area",
-    "building",
-    "building_sub",
-    "symbol",
-    "external",
-    "road"
+    "external"
   ];
 
   const areas = ["east", "west", "100th"];
 
+  await rm("dist", { force: true, recursive: true });
   await mkdir("dist", { recursive: true });
 
   for (const type of collectionTypes) {
@@ -41,14 +37,12 @@ import { mkdir, writeFile } from "fs/promises";
       ) as Feature[]
     };
 
-    await mkdir(`dist/${area}`, { recursive: true });
-
     const serialized = geojson.serialize(areaCollection);
     const rawBody = JSON.stringify(areaCollection);
 
-    await writeFile(`dist/${area}/all.geojson`, rawBody);
-    await writeFile(`dist/${area}/all.json`, rawBody);
-    await writeFile(`dist/${area}/all.fgb`, serialized);
+    await writeFile(`dist/${area}.geojson`, rawBody);
+    await writeFile(`dist/${area}.json`, rawBody);
+    await writeFile(`dist/${area}.fgb`, serialized);
   }
 
   const serializedAll = geojson.serialize(allData as FeatureCollection);
