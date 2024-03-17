@@ -1,0 +1,45 @@
+{
+  "id": "building_e_2",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "university",
+    "max_level": 5,
+    "min_level": 0,
+    "name": "東2号館",
+    "name:en": "Building E-2",
+    "name:ja": "東2号館"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.542994,
+          35.657498
+        ],
+        [
+          139.542994,
+          35.657498
+        ],
+        [
+          139.542939,
+          35.657371
+        ],
+        [
+          139.543366,
+          35.657251
+        ],
+        [
+          139.543421,
+          35.657378
+        ],
+        [
+          139.542994,
+          35.657498
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gate_southwest",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "west",
+    "uec:category": "gate",
+    "barrier": "gate",
+    "name": "南西門",
+    "name:en": "Southwest Gate",
+    "name:ja": "南西門"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      139.540025,
+      35.656619
+    ]
+  }
+}

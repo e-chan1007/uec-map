@@ -1,0 +1,45 @@
+{
+  "id": "building_e_d",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "university",
+    "max_level": 3,
+    "min_level": 0,
+    "name": "D棟",
+    "name:en": "Building D",
+    "name:ja": "D棟"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.5447,
+          35.657006
+        ],
+        [
+          139.5447,
+          35.657006
+        ],
+        [
+          139.544589,
+          35.65675
+        ],
+        [
+          139.544786,
+          35.656695
+        ],
+        [
+          139.544897,
+          35.656951
+        ],
+        [
+          139.5447,
+          35.657006
+        ]
+      ]
+    ]
+  }
+}

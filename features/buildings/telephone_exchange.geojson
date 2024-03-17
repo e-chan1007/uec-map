@@ -1,0 +1,45 @@
+{
+  "id": "telephone_exchange",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "yes",
+    "max_level": 0,
+    "min_level": 0,
+    "name": "旧電話交換室",
+    "name:en": "Former Telephone Exchange",
+    "name:ja": "旧電話交換室"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.543835,
+          35.656443
+        ],
+        [
+          139.543835,
+          35.656443
+        ],
+        [
+          139.543806,
+          35.656376
+        ],
+        [
+          139.543947,
+          35.656337
+        ],
+        [
+          139.543976,
+          35.656404
+        ],
+        [
+          139.543835,
+          35.656443
+        ]
+      ]
+    ]
+  }
+}

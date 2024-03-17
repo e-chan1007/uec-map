@@ -1,0 +1,45 @@
+{
+  "id": "warehouse_2",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "yes",
+    "max_level": 1,
+    "min_level": 0,
+    "name": "倉庫",
+    "name:en": "Warehouse",
+    "name:ja": "倉庫"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.544675,
+          35.656195
+        ],
+        [
+          139.544675,
+          35.656195
+        ],
+        [
+          139.544598,
+          35.656016
+        ],
+        [
+          139.544702,
+          35.655987
+        ],
+        [
+          139.54478,
+          35.656166
+        ],
+        [
+          139.544675,
+          35.656195
+        ]
+      ]
+    ]
+  }
+}

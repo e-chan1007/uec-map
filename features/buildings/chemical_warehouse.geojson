@@ -1,0 +1,45 @@
+{
+  "id": "chemical_warehouse",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "yes",
+    "max_level": 1,
+    "min_level": 0,
+    "name": "薬品庫",
+    "name:en": "Chemical Warehouse",
+    "name:ja": "薬品庫"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.544797,
+          35.658305
+        ],
+        [
+          139.544797,
+          35.658305
+        ],
+        [
+          139.544773,
+          35.658248
+        ],
+        [
+          139.544835,
+          35.658231
+        ],
+        [
+          139.544859,
+          35.658287
+        ],
+        [
+          139.544797,
+          35.658305
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+.container {
+  position: fixed;
+  width: 100%;
+  bottom: 0.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 0rem 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,45 @@
+{
+  "id": "building_e_6",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "university",
+    "max_level": 8,
+    "min_level": 0,
+    "name": "東6号館",
+    "name:en": "Building E-6",
+    "name:ja": "東6号館"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.544268,
+          35.658332
+        ],
+        [
+          139.544268,
+          35.658332
+        ],
+        [
+          139.544104,
+          35.657952
+        ],
+        [
+          139.544441,
+          35.657857
+        ],
+        [
+          139.544605,
+          35.658237
+        ],
+        [
+          139.544268,
+          35.658332
+        ]
+      ]
+    ]
+  }
+}

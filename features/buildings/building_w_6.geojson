@@ -1,0 +1,45 @@
+{
+  "id": "building_w_6",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "west",
+    "uec:category": "building",
+    "building": "university",
+    "max_level": 6,
+    "min_level": 0,
+    "name": "西6号館",
+    "name:en": "Building W-6",
+    "name:ja": "西6号館"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.541477,
+          35.657807
+        ],
+        [
+          139.541477,
+          35.657807
+        ],
+        [
+          139.541413,
+          35.657665
+        ],
+        [
+          139.541669,
+          35.657589
+        ],
+        [
+          139.541733,
+          35.657731
+        ],
+        [
+          139.541477,
+          35.657807
+        ]
+      ]
+    ]
+  }
+}

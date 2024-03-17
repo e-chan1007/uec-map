@@ -1,0 +1,20 @@
+{
+  "$schema": "https://geojson.org/schema/Feature.json",
+  "creator": "e_chan1007 <echan041007@gmail.com>",
+  "id": "tamagawa_athletic_field",
+  "type": "Feature",
+  "properties": {
+    "uec:category": "external",
+    "leisure": "sports_centre",
+    "name": "多摩川運動場",
+    "name:en": "Tamagawa Athletic Field",
+    "name:ja": "多摩川運動場"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      139.544692,
+      35.640302
+    ]
+  }
+}

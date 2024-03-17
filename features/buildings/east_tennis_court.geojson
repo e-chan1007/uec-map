@@ -1,0 +1,40 @@
+{
+  "id": "east_tennis_court",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "leisure": "pitch",
+    "name": "テニスコート",
+    "name:en": "Tennis Court",
+    "name:ja": "テニスコート",
+    "sport": "tennis"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.544660,
+          35.6556
+        ],
+        [
+          139.544572,
+          35.655393
+        ],
+        [
+          139.544682,
+          35.655363
+        ],
+        [
+          139.544771,
+          35.655570
+        ],
+        [
+          139.544660,
+          35.6556
+        ]
+      ]
+    ]
+  }
+}

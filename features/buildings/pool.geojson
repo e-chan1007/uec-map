@@ -1,0 +1,43 @@
+{
+  "id": "pool",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "west",
+    "uec:category": "building",
+    "leisure": "swimming_pool",
+    "name": "プール",
+    "name:en": "Swimming Pool",
+    "name:ja": "プール"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.540575,
+          35.658373
+        ],
+        [
+          139.540575,
+          35.658373
+        ],
+        [
+          139.540473,
+          35.658149
+        ],
+        [
+          139.540619,
+          35.658106
+        ],
+        [
+          139.540721,
+          35.658329
+        ],
+        [
+          139.540575,
+          35.658373
+        ]
+      ]
+    ]
+  }
+}

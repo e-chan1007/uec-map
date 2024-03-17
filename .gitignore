@@ -1,6 +1,8 @@
 .next
 dist
 node_modules
+generated
 out
 *.log
 next-env.d.ts
+.vercel

@@ -1,0 +1,53 @@
+{
+  "id": "alliance_center",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "100th",
+    "uec:category": "building",
+    "building": "commercial",
+    "max_level": 4,
+    "min_level": 0,
+    "name": "UECアライアンスセンター",
+    "name:en": "Alliance Center",
+    "name:ja": "UECアライアンスセンター"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.540008,
+          35.65612
+        ],
+        [
+          139.540008,
+          35.65612
+        ],
+        [
+          139.540482,
+          35.655964
+        ],
+        [
+          139.540522,
+          35.656044
+        ],
+        [
+          139.540498,
+          35.656052
+        ],
+        [
+          139.540526,
+          35.656108
+        ],
+        [
+          139.540077,
+          35.656256
+        ],
+        [
+          139.540008,
+          35.65612
+        ]
+      ]
+    ]
+  }
+}

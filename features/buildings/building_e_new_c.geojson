@@ -1,0 +1,45 @@
+{
+  "id": "building_e_new_c",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "university",
+    "max_level": 3,
+    "min_level": 0,
+    "name": "新C棟",
+    "name:en": "Building New C",
+    "name:ja": "新C棟"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.544435,
+          35.657029
+        ],
+        [
+          139.544435,
+          35.657029
+        ],
+        [
+          139.544348,
+          35.656828
+        ],
+        [
+          139.544489,
+          35.656788
+        ],
+        [
+          139.544576,
+          35.656989
+        ],
+        [
+          139.544435,
+          35.657029
+        ]
+      ]
+    ]
+  }
+}

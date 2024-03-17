@@ -1,0 +1,46 @@
+{
+  "id": "child_care_facility",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "amenity": "kindergarten",
+    "building": "yes",
+    "max_level": 1,
+    "min_level": 0,
+    "name": "保育施設「UEC保育園どんぐり」",
+    "name:en": "Child-Care Facility",
+    "name:ja": "保育施設「UEC保育園どんぐり」"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.544469,
+          35.659304
+        ],
+        [
+          139.544469,
+          35.659304
+        ],
+        [
+          139.544459,
+          35.65922
+        ],
+        [
+          139.5446,
+          35.659209
+        ],
+        [
+          139.544609,
+          35.659294
+        ],
+        [
+          139.544469,
+          35.659304
+        ]
+      ]
+    ]
+  }
+}

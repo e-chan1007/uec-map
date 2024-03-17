@@ -1,0 +1,45 @@
+{
+  "id": "building_e_c",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "university",
+    "max_level": 3,
+    "min_level": 0,
+    "name": "C棟",
+    "name:en": "Building C",
+    "name:ja": "C棟"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.544226,
+          35.657088
+        ],
+        [
+          139.544226,
+          35.657088
+        ],
+        [
+          139.544154,
+          35.656921
+        ],
+        [
+          139.544329,
+          35.656872
+        ],
+        [
+          139.544401,
+          35.657039
+        ],
+        [
+          139.544226,
+          35.657088
+        ]
+      ]
+    ]
+  }
+}

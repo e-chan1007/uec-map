@@ -1,0 +1,53 @@
+{
+  "name": "@e-chan1007/uec-map-server",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev:next": "next dev",
+    "dev": "run-p prebuild dev:*",
+    "build": "run-s prebuild && next build",
+    "prebuild": "run-p prebuild:*",
+    "prebuild:copymap": "mkdir -p ./src/generated && cp -r ../dist/all.geojson ./src/generated/all.json",
+    "prebuild:typegen": "openapi-typescript ./src/ogc-spec.yaml -o ./src/generated/ogc-spec.d.ts",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@turf/boolean-contains": "^6.5.0",
+    "@turf/boolean-crosses": "^6.5.0",
+    "@turf/center": "^6.5.0",
+    "clsx": "^2.1.0",
+    "flatgeobuf": "^3.27.1",
+    "leaflet": "^1.9.4",
+    "next": "14.0.4",
+    "next-swagger-doc": "^0.4.0",
+    "nuqs": "^1.17.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "react-leaflet": "^4.2.1",
+    "react-map-gl": "^7.1.7",
+    "sass": "^1.72.0",
+    "swagger-ui-react": "^5.10.5"
+  },
+  "devDependencies": {
+    "@e-chan1007/eslint-config-react": "^1.1.9",
+    "@turf/bbox": "^6.5.0",
+    "@turf/bbox-polygon": "^6.5.0",
+    "@turf/turf": "^6.5.0",
+    "@types/leaflet": "^1.9.8",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-react": "^4.18.3",
+    "eslint": "^8",
+    "maplibre-gl": "^4.1.0",
+    "next-plugin-yaml": "^1.0.1",
+    "npm-run-all": "^4.1.5",
+    "openapi-typescript": "^6.7.3",
+    "typescript": "^5"
+  }
+}

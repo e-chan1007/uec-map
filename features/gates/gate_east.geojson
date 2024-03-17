@@ -1,0 +1,19 @@
+{
+  "id": "gate_east",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "gate",
+    "barrier": "gate",
+    "name": "東門",
+    "name:en": "East Gate",
+    "name:ja": "東門"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      139.544822,
+      35.655937
+    ]
+  }
+}

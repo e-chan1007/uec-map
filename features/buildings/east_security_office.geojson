@@ -1,0 +1,61 @@
+{
+  "id": "east_security_office",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "university",
+    "max_level": 0,
+    "min_level": 0,
+    "name": "正門守衛所",
+    "name:en": "Security Office of the Main Gate",
+    "name:ja": "正門守衛所"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.54362,
+          35.655682
+        ],
+        [
+          139.543576,
+          35.655694
+        ],
+        [
+          139.543553,
+          35.655641
+        ],
+        [
+          139.543597,
+          35.655628
+        ],
+        [
+          139.543601,
+          35.655637
+        ],
+        [
+          139.543652,
+          35.655622
+        ],
+        [
+          139.543668,
+          35.655659
+        ],
+        [
+          139.543617,
+          35.655673
+        ],
+        [
+          139.54362,
+          35.655682
+        ],
+        [
+          139.54362,
+          35.655682
+        ]
+      ]
+    ]
+  }
+}

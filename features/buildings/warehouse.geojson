@@ -1,0 +1,45 @@
+{
+  "id": "warehouse",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "yes",
+    "max_level": 1,
+    "min_level": 0,
+    "name": "物品庫",
+    "name:en": "Warehouse",
+    "name:ja": "物品庫"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.543999,
+          35.656397
+        ],
+        [
+          139.543999,
+          35.656397
+        ],
+        [
+          139.543962,
+          35.656311
+        ],
+        [
+          139.544158,
+          35.656256
+        ],
+        [
+          139.544195,
+          35.656342
+        ],
+        [
+          139.543999,
+          35.656397
+        ]
+      ]
+    ]
+  }
+}

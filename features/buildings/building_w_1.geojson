@@ -1,0 +1,45 @@
+{
+  "id": "building_w_1",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "west",
+    "uec:category": "building",
+    "building": "university",
+    "max_level": 4,
+    "min_level": 0,
+    "name": "西1号館",
+    "name:en": "Building W-1",
+    "name:ja": "西1号館"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.540874,
+          35.657113
+        ],
+        [
+          139.540874,
+          35.657113
+        ],
+        [
+          139.540814,
+          35.656982
+        ],
+        [
+          139.541229,
+          35.656859
+        ],
+        [
+          139.541289,
+          35.656989
+        ],
+        [
+          139.540874,
+          35.657113
+        ]
+      ]
+    ]
+  }
+}

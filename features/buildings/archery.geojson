@@ -1,0 +1,46 @@
+{
+  "id": "archery",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "west",
+    "uec:category": "building",
+    "leisure": "pitch",
+    "max_level": 0,
+    "min_level": 0,
+    "name": "弓道場",
+    "name:en": "Archery Facility",
+    "name:ja": "弓道場",
+    "sport": "archery"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.541992,
+          35.658198
+        ],
+        [
+          139.541992,
+          35.658198
+        ],
+        [
+          139.541969,
+          35.658148
+        ],
+        [
+          139.542115,
+          35.658105
+        ],
+        [
+          139.542138,
+          35.658155
+        ],
+        [
+          139.541992,
+          35.658198
+        ]
+      ]
+    ]
+  }
+}

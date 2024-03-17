@@ -1,0 +1,45 @@
+{
+  "id": "main_warehouse",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "yes",
+    "max_level": 1,
+    "min_level": 0,
+    "name": "本部倉庫",
+    "name:en": "Main Warehouse",
+    "name:ja": "本部倉庫"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.544235,
+          35.656418
+        ],
+        [
+          139.544235,
+          35.656418
+        ],
+        [
+          139.544165,
+          35.656254
+        ],
+        [
+          139.54424,
+          35.656231
+        ],
+        [
+          139.54431,
+          35.656395
+        ],
+        [
+          139.544235,
+          35.656418
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "building_e_36",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "university",
+    "max_level": 0,
+    "min_level": 0,
+    "name": "東36号館",
+    "name:en": "Building E-36",
+    "name:ja": "東36号館"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.543006,
+          35.657253
+        ],
+        [
+          139.543006,
+          35.657253
+        ],
+        [
+          139.542959,
+          35.657147
+        ],
+        [
+          139.543215,
+          35.657075
+        ],
+        [
+          139.543262,
+          35.657181
+        ],
+        [
+          139.543006,
+          35.657253
+        ]
+      ]
+    ]
+  }
+}

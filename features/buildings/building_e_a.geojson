@@ -1,0 +1,62 @@
+{
+  "id": "building_e_a",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "uec:hasIndoorMap": true,
+    "building": "university",
+    "max_level": 3,
+    "min_level": 0,
+    "name": "A棟",
+    "name:en": "Building A",
+    "name:ja": "A棟"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.54391,
+          35.6567
+        ],
+        [
+          139.54391,
+          35.6567
+        ],
+        [
+          139.543862,
+          35.656588
+        ],
+        [
+          139.543906,
+          35.656576
+        ],
+        [
+          139.543911,
+          35.656586
+        ],
+        [
+          139.544269,
+          35.656485
+        ],
+        [
+          139.544265,
+          35.656475
+        ],
+        [
+          139.54431,
+          35.656462
+        ],
+        [
+          139.544358,
+          35.656574
+        ],
+        [
+          139.54391,
+          35.6567
+        ]
+      ]
+    ]
+  }
+}

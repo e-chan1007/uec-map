@@ -1,0 +1,19 @@
+{
+  "id": "gate_north",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "gate",
+    "barrier": "gate",
+    "name": "北門",
+    "name:en": "North Gate",
+    "name:ja": "北門"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      139.543265,
+      35.65884
+    ]
+  }
+}

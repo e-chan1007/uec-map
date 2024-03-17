@@ -1,0 +1,45 @@
+{
+  "id": "gym_2",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "west",
+    "uec:category": "building",
+    "building": "sports_hall",
+    "max_level": 1,
+    "min_level": 0,
+    "name": "第2体育館",
+    "name:en": "Gymnasium II",
+    "name:ja": "第2体育館"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.542302,
+          35.657289
+        ],
+        [
+          139.542302,
+          35.657289
+        ],
+        [
+          139.542248,
+          35.657171
+        ],
+        [
+          139.542489,
+          35.657099
+        ],
+        [
+          139.542543,
+          35.657217
+        ],
+        [
+          139.542302,
+          35.657289
+        ]
+      ]
+    ]
+  }
+}

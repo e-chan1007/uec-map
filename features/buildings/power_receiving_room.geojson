@@ -1,0 +1,45 @@
+{
+  "id": "power_receiving_room",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "west",
+    "uec:category": "building",
+    "building": "yes",
+    "max_level": 0,
+    "min_level": 0,
+    "name": "受電室",
+    "name:en": "Power Receiving Room",
+    "name:ja": "受電室"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.540614,
+          35.658619
+        ],
+        [
+          139.540614,
+          35.658619
+        ],
+        [
+          139.540591,
+          35.658569
+        ],
+        [
+          139.540691,
+          35.658539
+        ],
+        [
+          139.540713,
+          35.658589
+        ],
+        [
+          139.540614,
+          35.658619
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "building_w_3",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "west",
+    "uec:category": "building",
+    "building": "university",
+    "max_level": 4,
+    "min_level": 0,
+    "name": "西3号館",
+    "name:en": "Building W-3",
+    "name:ja": "西3号館"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.5408,
+          35.657138
+        ],
+        [
+          139.540385,
+          35.657261
+        ],
+        [
+          139.540302,
+          35.657079
+        ],
+        [
+          139.540483,
+          35.657025
+        ],
+        [
+          139.540507,
+          35.657076
+        ],
+        [
+          139.54074,
+          35.657007
+        ],
+        [
+          139.5408,
+          35.657138
+        ],
+        [
+          139.5408,
+          35.657138
+        ]
+      ]
+    ]
+  }
+}

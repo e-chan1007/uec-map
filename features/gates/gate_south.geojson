@@ -1,0 +1,19 @@
+{
+  "id": "gate_south",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "gate",
+    "barrier": "gate",
+    "name": "南門",
+    "name:en": "South Gate",
+    "name:ja": "南門"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      139.544467,
+      35.655315
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "extracurricular_facility",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "university",
+    "max_level": 2,
+    "min_level": 0,
+    "name": "課外活動施設 (サークル棟)",
+    "name:en": "Facilities for Extracurricular Activities",
+    "name:ja": "課外活動施設 (サークル棟)"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.543406,
+          35.659229
+        ],
+        [
+          139.543406,
+          35.659229
+        ],
+        [
+          139.543379,
+          35.659109
+        ],
+        [
+          139.543905,
+          35.659032
+        ],
+        [
+          139.543932,
+          35.659153
+        ],
+        [
+          139.543406,
+          35.659229
+        ]
+      ]
+    ]
+  }
+}

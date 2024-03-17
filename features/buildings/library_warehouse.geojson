@@ -1,0 +1,45 @@
+{
+  "id": "library_warehouse",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "yes",
+    "max_level": 1,
+    "min_level": 0,
+    "name": "図書館倉庫",
+    "name:en": "Library Warehouse",
+    "name:ja": "図書館倉庫"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.543042,
+          35.657902
+        ],
+        [
+          139.543042,
+          35.657902
+        ],
+        [
+          139.54304,
+          35.657809
+        ],
+        [
+          139.543162,
+          35.657807
+        ],
+        [
+          139.543165,
+          35.657899
+        ],
+        [
+          139.543042,
+          35.657902
+        ]
+      ]
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "width": 860,
+  "height": 276,
+  "icons": [
+    {
+      "levels": [
+        0
+      ],
+      "x": 630,
+      "y": 136,
+      "label": "A101",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 190,
+      "y": 136,
+      "label": "A102",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 630,
+      "y": 136,
+      "label": "A201",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 190,
+      "y": 136,
+      "label": "A202",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 670,
+      "y": 120,
+      "label": "A301",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 470,
+      "y": 120,
+      "label": "A302",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 190,
+      "y": 120,
+      "label": "A303",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        3
+      ],
+      "x": 670,
+      "y": 120,
+      "label": "A401",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        3
+      ],
+      "x": 470,
+      "y": 120,
+      "label": "A402",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        3
+      ],
+      "x": 190,
+      "y": 120,
+      "label": "A403",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "x": 35,
+      "y": 152,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "x": 825,
+      "y": 152,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "x": 330,
+      "y": 145,
+      "icon": "elevator"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 330,
+      "y": 102,
+      "icon": "toilet_wheel"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 35,
+      "y": 50,
+      "icon": "toilet_women"
+    },
+    {
+      "levels": [
+        2,
+        3
+      ],
+      "x": 35,
+      "y": 50,
+      "icon": "toilet_men"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 825,
+      "y": 50,
+      "icon": "toilet_men"
+    },
+    {
+      "levels": [
+        2,
+        3
+      ],
+      "x": 825,
+      "y": 50,
+      "icon": "toilet_women"
+    }
+  ]
+}

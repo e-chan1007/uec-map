@@ -1,0 +1,20 @@
+{
+  "$schema": "https://geojson.org/schema/Feature.json",
+  "creator": "e_chan1007 <echan041007@gmail.com>",
+  "id": "hostel_hamamiryo",
+  "type": "Feature",
+  "properties": {
+    "uec:category": "external",
+    "building": "hotel",
+    "name": "浜見寮",
+    "name:en": "Student Hostel (Hamami Ryo)",
+    "name:ja": "浜見寮"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      139.457354,
+      35.319907
+    ]
+  }
+}

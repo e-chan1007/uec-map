@@ -1,0 +1,45 @@
+{
+  "id": "building_w_2",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "west",
+    "uec:category": "building",
+    "building": "university",
+    "max_level": 7,
+    "min_level": 0,
+    "name": "西2号館",
+    "name:en": "Building W-2",
+    "name:ja": "西2号館"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.540901,
+          35.657571
+        ],
+        [
+          139.540901,
+          35.657571
+        ],
+        [
+          139.540843,
+          35.657445
+        ],
+        [
+          139.541503,
+          35.657249
+        ],
+        [
+          139.541561,
+          35.657375
+        ],
+        [
+          139.540901,
+          35.657571
+        ]
+      ]
+    ]
+  }
+}

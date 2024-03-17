@@ -1,0 +1,20 @@
+{
+  "$schema": "https://geojson.org/schema/Feature.json",
+  "creator": "e_chan1007 <echan041007@gmail.com>",
+  "id": "hostel_sugadaira",
+  "type": "Feature",
+  "properties": {
+    "uec:category": "external",
+    "building": "hotel",
+    "name": "菅平宇宙電波観測所 菅平セミナーハウス",
+    "name:en": "Sugadaira Space Radio Observatory Student Hostel",
+    "name:ja": "菅平宇宙電波観測所 菅平セミナーハウス"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      138.318255,
+      36.523603
+    ]
+  }
+}

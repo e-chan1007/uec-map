@@ -1,0 +1,53 @@
+{
+  "id": "personnel_clubhouse",
+  "type": "Feature",
+  "properties": {
+    "uec:area": "east",
+    "uec:category": "building",
+    "building": "yes",
+    "max_level": 2,
+    "min_level": 0,
+    "name": "職員研修所",
+    "name:en": "Personnel Clubhouse",
+    "name:ja": "職員研修所"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          139.544652,
+          35.659155
+        ],
+        [
+          139.544565,
+          35.659162
+        ],
+        [
+          139.544566,
+          35.65917
+        ],
+        [
+          139.544524,
+          35.659173
+        ],
+        [
+          139.544517,
+          35.659113
+        ],
+        [
+          139.544646,
+          35.659103
+        ],
+        [
+          139.544652,
+          35.659155
+        ],
+        [
+          139.544652,
+          35.659155
+        ]
+      ]
+    ]
+  }
+}
