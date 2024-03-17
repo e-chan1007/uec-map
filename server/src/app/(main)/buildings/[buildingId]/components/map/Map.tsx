@@ -76,9 +76,9 @@ export default function Map({ building }: Props) {
     crs={L.CRS.Simple}
     center={[manifest.height / 2, manifest.width / 2]}
     bounds={[[0, 0], [manifest.height, manifest.width]]}
-    zoom={-1}
-    maxZoom={1}
-    minZoom={-2}
+    zoom={0}
+    maxZoom={2}
+    minZoom={-1}
     className={styles.map}
     maxBounds={[[-25, -25], [manifest.height+25, manifest.width+25]]}
 

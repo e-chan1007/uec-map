@@ -1,0 +1,157 @@
+{
+  "width": 422,
+  "height": 422,
+  "icons": [
+    {
+      "levels": [
+        0
+      ],
+      "x": 352,
+      "y": 211,
+      "label": "B101",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 221,
+      "y": 69,
+      "label": "B102",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 119,
+      "y": 300,
+      "label": "B201",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 286,
+      "y": 130,
+      "label": "B202",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 349,
+      "y": 73,
+      "label": "学生なんでも相談室",
+      "icon": "help"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 64,
+      "y": 67,
+      "label": "先端工学基礎課程事務室",
+      "icon": "office"
+    },
+    {
+      "levels": [
+        0,
+        1
+      ],
+      "x": 146,
+      "y": 125,
+      "icon": "elevator"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 64,
+      "y": 179,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 243,
+      "y": 359,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 257,
+      "y": 390,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 32,
+      "y": 165,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 105,
+      "y": 125,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 296,
+      "y": 317,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 271,
+      "y": 374,
+      "icon": "toilet_wheel"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 330,
+      "y": 374,
+      "icon": "toilet_men"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 336,
+      "y": 343,
+      "icon": "toilet_women"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 315,
+      "y": 359,
+      "icon": "toilet_men"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 344,
+      "y": 365,
+      "icon": "toilet_women"
+    }
+  ]
+}
