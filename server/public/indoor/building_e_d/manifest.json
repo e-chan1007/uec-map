@@ -1,0 +1,199 @@
+{
+  "width": 540,
+  "height": 342,
+  "icons": [
+    {
+      "levels": [
+        0
+      ],
+      "x": 420,
+      "y": 100,
+      "label": "D101",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 220,
+      "y": 100,
+      "label": "D103",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 69,
+      "y": 50,
+      "label": "D105",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 51,
+      "y": 150,
+      "label": "D110",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 295,
+      "y": 150,
+      "label": "D202\n基礎科学実験A実験室",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 95,
+      "y": 150,
+      "label": "D209\n基礎科学実験A実験室",
+      "icon": "classroom"
+    },{
+      "levels": [
+        1
+      ],
+      "x": 95,
+      "y": 50,
+      "label": "D204\n基礎科学実験A実験室",
+      "icon": "classroom"
+    },{
+      "levels": [
+        1
+      ],
+      "x": 469,
+      "y": 125,
+      "label": "D206\n基礎科学実験A教員控室",
+      "icon": "office"
+    },{
+      "levels": [
+        2
+      ],
+      "x": 345,
+      "y": 125,
+      "label": "D301\n基礎科学実験B実験室",
+      "icon": "classroom"
+    },{
+      "levels": [
+        2
+      ],
+      "x": 469,
+      "y": 144,
+      "label": "D306\n基礎科学実験B実験室",
+      "icon": "classroom"
+    },{
+      "levels": [
+        2
+      ],
+      "x": 232,
+      "y": 175,
+      "label": "D308\n基礎科学実験A実験室",
+      "icon": "classroom"
+    },{
+      "levels": [
+        2
+      ],
+      "x": 158,
+      "y": 175,
+      "label": "D309\n基礎科学実験A実験室",
+      "icon": "classroom"
+    },{
+      "levels": [
+        2
+      ],
+      "x": 70,
+      "y": 50,
+      "label": "D303\n基礎科学実験A実験室",
+      "icon": "classroom"
+    },{
+      "levels": [
+        3
+      ],
+      "x": 270,
+      "y": 150,
+      "label": "D403\n基礎科学実験B実験室",
+      "icon": "classroom"
+    },{
+      "levels": [
+        3
+      ],
+      "x": 369,
+      "y": 49,
+      "label": "D402\n基礎科学実験B教員事務室",
+      "icon": "office"
+    },
+    {
+      "levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "x": 42,
+      "y": 275,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "x": 499,
+      "y": 275,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "x": 477,
+      "y": 225,
+      "icon": "elevator"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 150,
+      "y": 268,
+      "icon": "toilet_women"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 199,
+      "y": 280,
+      "icon": "toilet_wheel"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 51,
+      "y": 225,
+      "icon": "toilet_women"
+    },
+    {
+      "levels": [
+        0,
+        1,
+        3
+      ],
+      "x": 51,
+      "y": 225,
+      "icon": "toilet_men"
+    }
+  ]
+}

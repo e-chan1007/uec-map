@@ -14,8 +14,14 @@
 }
 
 .marker-label {
-  white-space: nowrap;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  text-align: center;
   text-shadow: 0 0 2px #ffffff;
+}
+
+.label-hidden .marker-label {
+  visibility: hidden;
 }
 
 .marker-icon {

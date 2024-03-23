@@ -66,7 +66,7 @@ export default function Map({ building }: Props) {
         className={clsx(styles["level-button"], level === i && styles.active)}
         onClick={() => setLevel(i)}
       >
-        {i < 0 ? `B${i}F` : `${i + 1}F`}
+        {i < 0 ? `B${-i}F` : `${i + 1}F`}
       </a>
     );
   }

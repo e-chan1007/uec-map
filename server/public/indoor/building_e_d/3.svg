@@ -1,0 +1,22 @@
+<svg width="540" height="342" viewBox="0 0 540 342" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_283_191)">
+<rect x="439.5" y="199.5" width="16" height="57" transform="rotate(-90 439.5 199.5)" fill="#D9D9D9" stroke="#CCCCCC"/>
+<rect x="419.5" y="98.5" width="98" height="100" transform="rotate(-90 419.5 98.5)" fill="#D9D9D9" stroke="#CCCCCC"/>
+<rect x="496.5" y="249.5" width="50" height="23" transform="rotate(-90 496.5 249.5)" fill="#D9D9D9" stroke="#CCCCCC"/>
+<rect x="83.5" y="299.5" width="100" height="37" transform="rotate(-90 83.5 299.5)" fill="white" stroke="#CCCCCC"/>
+<rect x="419.5" y="299.5" width="100" height="39" transform="rotate(-90 419.5 299.5)" fill="white" stroke="#CCCCCC"/>
+<rect x="0.5" y="299.5" width="49" height="83" transform="rotate(-90 0.5 299.5)" fill="#F1F3F4" stroke="#CCCCCC"/>
+<rect x="19.5" y="250.5" width="51" height="64" transform="rotate(-90 19.5 250.5)" fill="#E0E5FF" stroke="#CCCCCC"/>
+<path d="M319.5 98L319.5 98.5L320 98.5L419 98.5L420 98.5L519.5 98.5L519.5 183L519.5 184L519.5 199.5L496.5 199.5L496.5 184L496.5 183.5L496 183.5L440 183.5L439.5 183.5L439.5 184L439.5 199.5L420 199.5L419.5 199.5L419.5 200L419.5 299.5L120.5 299.5L120.5 200L120.5 199.5L120 199.5L19.5 199.5L19.5 0.5L319.5 0.499987L319.5 98Z" fill="#FDF9EF" stroke="#F0E9D7"/>
+<rect x="319.5" y="98.5" width="98" height="100" transform="rotate(-90 319.5 98.5)" fill="#FDF9EF" stroke="#F0E9D7"/>
+<rect x="458.5" y="249.5" width="50" height="38" transform="rotate(-90 458.5 249.5)" fill="#F1F3F4" stroke="#CCCCCC"/>
+<rect x="458.5" y="299.5" width="50" height="81" transform="rotate(-90 458.5 299.5)" fill="#F1F3F4" stroke="#CCCCCC"/>
+<line x1="459" y1="249.5" x2="451" y2="249.5" stroke="#CCCCCC"/>
+<path d="M520 249.5L539.5 249.5L539.5 299.5L459 299.5L458 299.5L420 299.5L419 299.5L171 299.5L170 299.5L121 299.5L120 299.5L84 299.5L83 299.5L0.5 299.5L0.499998 250.5L19 250.5L19.5 250.5L19.5 250L19.5 200L19.5 199L19.5 101L19.5 100L19.5 0.499999L170 0.499993L171 0.499993L419 0.499982L420 0.499982L519.5 0.499977L519.5 50L519.5 51L519.5 183L519.5 184L519.5 199L519.5 200L519.5 249L519.5 249.5L520 249.5Z" stroke="#CCCCCC"/>
+</g>
+<defs>
+<clipPath id="clip0_283_191">
+<rect width="342" height="540" fill="white" transform="translate(0 342) rotate(-90)"/>
+</clipPath>
+</defs>
+</svg>

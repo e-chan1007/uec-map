@@ -1,0 +1,108 @@
+{
+  "width": 266,
+  "height": 483,
+  "icons": [
+    {
+      "levels": [
+        0
+      ],
+      "x": 132,
+      "y": 160,
+      "label": "C103",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 132,
+      "y": 188,
+      "label": "C203",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 132,
+      "y": 188,
+      "label": "C303",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        3
+      ],
+      "x": 132,
+      "y": 188,
+      "label": "C403",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "x": 50,
+      "y": 446,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "x": 167,
+      "y": 457,
+      "icon": "elevator"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 42,
+      "y": 308,
+      "icon": "toilet_women"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 42,
+      "y": 360,
+      "icon": "toilet_men"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 125,
+      "y": 313,
+      "icon": "toilet_wheel"
+    },
+    {
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "x": 228,
+      "y": 446,
+      "icon": "toilet_women"
+    },
+    {
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "x": 53,
+      "y": 365,
+      "icon": "toilet_men"
+    }
+  ]
+}
