@@ -1,0 +1,114 @@
+{
+  "width": 1041,
+  "height": 238,
+  "levels": [-1, 0],
+  "icons": [
+    {
+      "levels": [
+        -1
+      ],
+      "x": 846,
+      "y": 50,
+      "label": "西2-B106",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        -1
+      ],
+      "x": 846,
+      "y": 188,
+      "label": "西2-B105",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        -1
+      ],
+      "x": 976,
+      "y": 119,
+      "label": "西2-B101",
+      "icon": "classroom"
+    },{
+      "levels": [
+        0
+      ],
+      "x": 846,
+      "y": 50,
+      "label": "西2-106",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 846,
+      "y": 188,
+      "label": "西2-105",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 976,
+      "y": 119,
+      "label": "西2-101",
+      "icon": "classroom"
+    },{
+      "levels": [
+        0
+      ],
+      "x": 390,
+      "y": 188,
+      "label": "アクティブラーニングスペース",
+      "icon": "classroom"
+    },    {
+      "levels": [
+        -1, 0, 1, 2, 3, 4, 5, 6, 7
+      ],
+      "x": 586,
+      "y": 14,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        -1, 0, 1, 2, 3, 4, 5, 6, 7
+      ],
+      "x": 161,
+      "y": 37,
+      "icon": "stairs"
+    },{
+      "levels": [
+        -1, 0, 1, 2, 3, 4, 5, 6, 7
+      ],
+      "x": 586,
+      "y": 45,
+      "icon": "elevator"
+    },
+    {
+      "levels": [
+        0, 1, 2, 3, 4, 5, 6, 7
+      ],
+      "x": 289,
+      "y": 36,
+      "icon": "toilet_women"
+    },
+    {
+      "levels": [
+        0, 1, 2, 3, 4, 5, 6, 7
+      ],
+      "x": 354,
+      "y": 36,
+      "icon": "toilet_men"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 300,
+      "y": 81,
+      "icon": "toilet_wheel"
+    }
+  ]
+}

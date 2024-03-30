@@ -1,0 +1,63 @@
+{
+  "width": 868,
+  "height": 628,
+  "levels": [0],
+  "icons": [
+    {
+      "levels": [
+        0
+      ],
+      "x": 114,
+      "y": 484,
+      "label": "西8-131",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 458,
+      "y": 484,
+      "label": "西8-132",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 300,
+      "y": 235,
+      "icon": "toilet_wheel"
+    }, {
+      "levels": [
+        0
+      ],
+      "x": 354,
+      "y": 235,
+      "icon": "toilet_women"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 344,
+      "y": 340,
+      "icon": "toilet_men"
+    },     {
+      "levels": [
+        0
+      ],
+      "x": 518,
+      "y": 245,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 404,
+      "y": 209,
+      "icon": "elevator"
+    }
+  ]
+}

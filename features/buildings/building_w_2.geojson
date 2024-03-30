@@ -4,9 +4,10 @@
   "properties": {
     "uec:area": "west",
     "uec:category": "building",
+    "uec:indoorMap": "partial",
     "building": "university",
     "max_level": 7,
-    "min_level": 0,
+    "min_level": -1,
     "name": "西2号館",
     "name:en": "Building W-2",
     "name:ja": "西2号館"

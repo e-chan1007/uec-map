@@ -30,7 +30,7 @@ interface IconManifest {
 interface IndoorMapManifest {
   width: number;
   height: number;
-  floors?: number[];
+  levels?: number[];
   icons: IconManifest[];
 }
 
@@ -50,7 +50,7 @@ export default function Map({ building }: Props) {
   useEffect(() => {
     fetch(`/indoor/${building.id}/manifest.json`).then(r => r.json()).then(v => {
       setManifest(v);
-      if (v.floors && !v.floors.includes(level)) setLevel(v.floors[0]);
+      if (v.levels && !v.levels.includes(level)) setLevel(v.levels[0]);
     });
   }, []);
 
@@ -72,7 +72,7 @@ export default function Map({ building }: Props) {
 
   const levelButtons = [];
   for (let i = building.properties.maxLevel; i >= building.properties.minLevel; i--) {
-    if (manifest.floors && !manifest.floors.includes(i)) continue;
+    if (manifest.levels && !manifest.levels.includes(i)) continue;
     levelButtons.push(
       <a
         className={clsx(styles["level-button"], level === i && styles.active)}
@@ -83,16 +83,19 @@ export default function Map({ building }: Props) {
     );
   }
 
+  const paddingX = manifest.width / 2;
+  const paddingY = manifest.height / 2;
+
   return <MapContainer
     attributionControl={false}
     crs={L.CRS.Simple}
     center={[manifest.height / 2, manifest.width / 2]}
     bounds={[[0, 0], [manifest.height, manifest.width]]}
-    zoom={0}
+    zoom={-0.5}
     maxZoom={2}
-    minZoom={-1}
+    minZoom={-2}
     className={styles.map}
-    maxBounds={[[-25, -25], [manifest.height+25, manifest.width+25]]}
+    maxBounds={[[-paddingY, -paddingX], [manifest.height + paddingY, manifest.width + paddingX]]}
 
   >
     <ImageOverlay

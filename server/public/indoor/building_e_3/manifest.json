@@ -1,7 +1,7 @@
 {
   "width": 815,
   "height": 555,
-  "floors": [0, 1, 2],
+  "levels": [0, 1, 2],
   "icons": [
     {
       "levels": [
