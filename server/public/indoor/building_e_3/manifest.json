@@ -1,0 +1,395 @@
+{
+  "width": 815,
+  "height": 555,
+  "floors": [0, 1, 2],
+  "icons": [
+    {
+      "levels": [
+        0
+      ],
+      "x": 357,
+      "y": 68,
+      "label": "洋雑誌開架書庫",
+      "icon": "book"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 491,
+      "y": 68,
+      "label": "和雑誌開架書庫",
+      "icon": "book"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 342,
+      "y": 229,
+      "label": "和雑誌開架",
+      "icon": "book"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 565,
+      "y": 330,
+      "label": "和雑誌開架 (新着)",
+      "icon": "book"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 373,
+      "y": 296,
+      "label": "ワークブース1",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 501,
+      "y": 370,
+      "label": "ワークブース2",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 168,
+      "y": 350,
+      "label": "洋雑誌開架",
+      "icon": "book"
+    }, {
+      "levels": [
+        0
+      ],
+      "x": 731,
+      "y": 352,
+      "label": "東3-105 情報用第一演習教室",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 731,
+      "y": 232,
+      "label": "東3-101 情報用第二演習教室",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 407,
+      "y": 132,
+      "label": "UEC Ambient Intelligence Agora",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 168,
+      "y": 350,
+      "label": "開架和図書 (工学・自然科学)",
+      "icon": "book"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 242,
+      "y": 198,
+      "label": "情報用演習室",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 635,
+      "y": 379,
+      "label": "レポート作成台",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 492,
+      "y": 431,
+      "label": "サービスカウンター",
+      "icon": "office"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 401,
+      "y": 100,
+      "label": "自習室",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 389,
+      "y": 21,
+      "label": "個人ブース",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 710,
+      "y": 34,
+      "label": "グループ学習室1",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 646,
+      "y": 21,
+      "label": "グループ学習室2",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 522,
+      "y": 21,
+      "label": "グループ学習室3",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 680,
+      "y": 102,
+      "label": "学習支援室",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 268,
+      "y": 88,
+      "label": "AV視聴室",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 225,
+      "y": 98,
+      "label": "AVメディア室",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 254,
+      "y": 198,
+      "label": "情報用自習室",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 456,
+      "y": 422,
+      "label": "開架和図書 (人文・社会系)",
+      "icon": "book"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 522,
+      "y": 374,
+      "label": "外国語",
+      "icon": "book"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 192,
+      "y": 317,
+      "label": "開架洋図書",
+      "icon": "book"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 150,
+      "y": 400,
+      "label": "開架和図書 (人文・社会系)",
+      "icon": "book"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 258,
+      "y": 446,
+      "label": "資格・就職",
+      "icon": "book"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 557,
+      "y": 100,
+      "label": "参考図書 (辞書・辞典)",
+      "icon": "book"
+    },
+    {
+      "levels": [
+        0, 1, 2
+      ],
+      "x": 602,
+      "y": 102,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0, 1, 2
+      ],
+      "x": 473,
+      "y": 200,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+      ],
+      "x": 638,
+      "y": 521,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0, 1, 2
+      ],
+      "x": 222,
+      "y": 150,
+      "icon": "elevator"
+    },
+    {
+      "levels": [
+        0, 1, 2
+      ],
+      "x": 294,
+      "y": 466,
+      "icon": "elevator"
+    },
+    {
+      "levels": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+      ],
+      "x": 734,
+      "y": 461,
+      "icon": "elevator"
+    },
+    {
+      "levels": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+      ],
+      "x": 758,
+      "y": 491,
+      "icon": "toilet_women"
+    },
+    {
+      "levels": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+      ],
+      "x": 795,
+      "y": 503,
+      "icon": "toilet_men"
+    },
+    {
+      "levels": [
+        0, 1
+      ],
+      "x": 570,
+      "y": 200,
+      "icon": "toilet_men"
+    },
+    {
+      "levels": [
+        0, 1
+      ],
+      "x": 601,
+      "y": 200,
+      "icon": "toilet_women"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 599,
+      "y": 18,
+      "icon": "toilet_men"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 575,
+      "y": 18,
+      "icon": "toilet_women"
+    },
+    {
+      "levels": [
+        0, 1, 2
+      ],
+      "x": 81,
+      "y": 275,
+      "icon": "toilet_men"
+    },
+    {
+      "levels": [
+        0, 2
+      ],
+      "x": 55,
+      "y": 265,
+      "icon": "toilet_women"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 55,
+      "y": 265,
+      "icon": "toilet_wheel"
+    },
+    {
+      "levels": [
+        0
+      ],
+      "x": 757,
+      "y": 449,
+      "icon": "toilet_wheel"
+    }
+  ]
+}

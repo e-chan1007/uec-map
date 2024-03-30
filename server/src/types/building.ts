@@ -5,7 +5,7 @@ export type BuildingPointFeature = Feature<Point, {
   name: string;
   "name:en": string;
   "name:ja": string;
-  hasIndoorMap?: boolean;
+  indoorMap?: "full" | "partial";
   minLevel: number;
   maxLevel: number;
 }>

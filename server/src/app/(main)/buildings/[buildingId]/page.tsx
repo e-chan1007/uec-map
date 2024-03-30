@@ -15,7 +15,7 @@ interface Slug {
 
 export default async function BuildingPage({ params }: { params: Slug }) {
   const building = allBuildings.features.find(f => f.id === params.buildingId) as BuildingPointFeature;
-  if (!building || !building.properties.hasIndoorMap) {
+  if (!building || !building.properties.indoorMap) {
     return <div>Building not found</div>;
   }
 
@@ -36,7 +36,13 @@ export default async function BuildingPage({ params }: { params: Slug }) {
   return <div className={styles.container}>
     <Button href={`/buildings`} variant="outlined"><MdArrowBack /> 施設一覧に戻る</Button>
     <h1>{building.properties.name}</h1>
+    <div>{building.properties.maxLevel+1}階建て{building.properties.minLevel < 0 && `(地下${-building.properties.minLevel}階)`}</div>
     <Button href={`/?pin=${building.id}`}><MdMap /> マップに表示</Button>
+    {building.properties.indoorMap === "partial" && (
+      <div className={styles.alert}>
+        この施設の屋内マップは一部の階のみ表示できます。
+      </div>
+    )}
     <Map building={building} />
   </div>;
 }

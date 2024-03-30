@@ -9,3 +9,16 @@
     margin: 0;
   }
 }
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #f7f3d9;
+  color: #c0a80d;
+  border: 1px solid;
+  align-self: stretch;
+}

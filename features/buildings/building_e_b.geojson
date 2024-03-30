@@ -4,7 +4,7 @@
   "properties": {
     "uec:area": "east",
     "uec:category": "building",
-    "uec:hasIndoorMap": true,
+    "uec:indoorMap": "full",
     "building": "university",
     "max_level": 1,
     "min_level": 0,

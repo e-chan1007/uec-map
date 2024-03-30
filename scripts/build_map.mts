@@ -48,7 +48,7 @@ import type { BuildingPointFeature } from "../server/src/types/building";
           "name:en": feature.properties["name:en"],
           "name:ja": feature.properties["name:ja"],
           "area": feature.properties["uec:area"],
-          "hasIndoorMap": feature.properties["uec:hasIndoorMap"],
+          "indoorMap": feature.properties["uec:indoorMap"],
           "minLevel": feature.properties["min_level"],
           "maxLevel": feature.properties["max_level"],
           "score": 0

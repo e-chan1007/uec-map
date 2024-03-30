@@ -25,7 +25,7 @@ export function BuildingListItem({ building }: Props) {
     <p className={styles.area}>{areaNames[building.properties.area]}</p>
     <div className={styles.control}>
       <Button href={`/?pin=${building.id}`}><MdMap /> マップに表示</Button>
-      {building.properties.hasIndoorMap && <Button href={`/buildings/${building.id}`}><MdDoorFront /> 屋内マップを表示</Button>}
+      {building.properties.indoorMap && <Button href={`/buildings/${building.id}`}><MdDoorFront /> 屋内マップを表示</Button>}
     </div>
   </div>;
 }

@@ -19,6 +19,7 @@ interface Props {
 interface IndoorMapManifest {
   width: number;
   height: number;
+  floors?: number[];
   icons: {
     levels: number[];
     x: number;
@@ -55,12 +56,11 @@ export default function Map({ building }: Props) {
     })));
   }, [manifest, level]);
 
-  console.log(manifest);
-
   if (!manifest) return <div>Loading...</div>;
 
   const levelButtons = [];
   for (let i = building.properties.maxLevel; i >= building.properties.minLevel; i--) {
+    if (manifest.floors && !manifest.floors.includes(i)) continue;
     levelButtons.push(
       <a
         className={clsx(styles["level-button"], level === i && styles.active)}
