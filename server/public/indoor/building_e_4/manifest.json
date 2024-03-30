@@ -1,0 +1,82 @@
+{
+  "width": 871,
+  "height": 1172,
+  "floors": [1],
+  "icons": [
+    {
+      "levels": [
+        1
+      ],
+      "x": 552,
+      "y": 932,
+      "label": "東4-201",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 595,
+      "y": 460,
+      "label": "東4-222",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1
+      ],
+      "x": 815,
+      "y": 648,
+      "icon": "toilet"
+    },    {
+      "levels": [
+        1
+      ],
+      "x": 100,
+      "y": 1105,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0,1,2,3,4,5,6,7
+      ],
+      "x": 815,
+      "y": 572,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0,1,2,3,4,5,6,7
+      ],
+      "x": 182,
+      "y": 812,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0,1
+      ],
+      "x": 530,
+      "y": 264,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        0,1,2,3,4,5,6,7
+      ],
+      "x": 150,
+      "y": 733,
+      "icon": "elevator"
+    },
+    {
+      "levels": [
+        1,2
+      ],
+      "x": 90,
+      "y": 910,
+      "label": "東5号館",
+      "link": "building_e_5",
+      "icon": "bridge"
+    }
+  ]
+}

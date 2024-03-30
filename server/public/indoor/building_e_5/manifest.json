@@ -1,0 +1,67 @@
+{
+  "width": 300,
+  "height": 513,
+  "icons": [
+    {
+      "levels": [
+        1
+      ],
+      "x": 150,
+      "y": 160,
+      "label": "東5-241",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        2
+      ],
+      "x": 150,
+      "y": 160,
+      "label": "東5-341",
+      "icon": "classroom"
+    },
+    {
+      "levels": [
+        1,2
+      ],
+      "x": 112,
+      "y": 361,
+      "icon": "toilet"
+    },    {
+      "levels": [
+        0
+      ],
+      "x": 210,
+      "y": 340,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        1,2
+      ],
+      "x": 210,
+      "y": 360,
+      "icon": "stairs"
+    },
+    {
+      "levels": [
+        1,2
+      ],
+      "x": 300,
+      "y": 380,
+      "label": "東4号館",
+      "link": "building_e_4",
+      "icon": "bridge"
+    },
+    {
+      "levels": [
+        1,2
+      ],
+      "x": 0,
+      "y": 380,
+      "label": "東6号館",
+      "link": "building_e_6",
+      "icon": "bridge"
+    }
+  ]
+}

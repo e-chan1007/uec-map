@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import clsx from "clsx";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { useRouter } from "next/navigation";
+import { parseAsInteger, useQueryState } from "nuqs";
 import { ImageOverlay, MapContainer, Marker, Pane, SVGOverlay } from "react-leaflet";
 
 import styles from "./Map.module.scss";
@@ -16,17 +18,20 @@ interface Props {
   building: BuildingPointFeature,
 }
 
+interface IconManifest {
+  levels: number[];
+  x: number;
+  y: number;
+  label?: string;
+  link?: string;
+  icon: string;
+}
+
 interface IndoorMapManifest {
   width: number;
   height: number;
   floors?: number[];
-  icons: {
-    levels: number[];
-    x: number;
-    y: number;
-    label?: string;
-    icon: string;
-  }[];
+  icons: IconManifest[];
 }
 
 interface IconMarker {
@@ -36,17 +41,24 @@ interface IconMarker {
 }
 
 export default function Map({ building }: Props) {
+  const router = useRouter();
   const [manifest, setManifest] = useState<IndoorMapManifest|null>(null);
   const [icons, setIcons] = useState<IconMarker[]>([]);
-  const [level, setLevel] = useState(0);
+  const [iconManifests, setIconManifests] = useState<IconManifest[]>([]);
+  const [level, setLevel] = useQueryState("level", parseAsInteger.withDefault(0));
 
   useEffect(() => {
-    fetch(`/indoor/${building.id}/manifest.json`).then(r => r.json()).then(v => setManifest(v));
+    fetch(`/indoor/${building.id}/manifest.json`).then(r => r.json()).then(v => {
+      setManifest(v);
+      if (v.floors && !v.floors.includes(level)) setLevel(v.floors[0]);
+    });
   }, []);
 
   useEffect(() => {
     if (!manifest) return;
-    setIcons(manifest.icons.filter(icon => icon.levels.includes(level)).map(icon => ({
+    const iconManifests = manifest.icons.filter(icon => icon.levels.includes(level));
+    setIconManifests(iconManifests);
+    setIcons(iconManifests.map(icon => ({
       id: `${icon.label}_${icon.x}_${icon.y}`,
       icon: createMarkerIcon(<div className={styles.marker}>
         {icon.label && <div className={styles["marker-label"]}>{icon.label}</div> }
@@ -88,12 +100,18 @@ export default function Map({ building }: Props) {
       bounds={[[0, 0], [manifest.height, manifest.width]]}
     />
     {
-      icons.map(icon => <Marker
+      icons.map((icon, i) => <Marker
         icon={icon.icon}
         position={icon.position}
-        interactive={false}
+        interactive={true}
         keyboard={false}
         key={icon.id}
+        eventHandlers={{
+          click: () => {
+            const icon = iconManifests[i];
+            if (icon.link) router.replace(`/buildings/${icon.link}?level=${level}`);
+          }
+        }}
       />)
 
     }

@@ -4,8 +4,9 @@
   "properties": {
     "uec:area": "east",
     "uec:category": "building",
+    "uec:indoorMap": "full",
     "building": "university",
-    "max_level": 7,
+    "max_level": 2,
     "min_level": 0,
     "name": "東5号館",
     "name:en": "Building E-5",
