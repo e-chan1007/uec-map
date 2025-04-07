@@ -1,4 +1,4 @@
-import dynamic from "next/dynamic";
+
 import { MdArrowBack, MdMap } from "react-icons/md";
 
 import styles from "./page.module.scss";
@@ -8,12 +8,14 @@ import type { BuildingPointFeature } from "@/types/building.js";
 import { Button } from "@/app/components/button/Button";
 import allBuildings from "@/assets/list.json";
 
+import { Map } from "./components/map";
 
 interface Slug {
   buildingId: string;
 }
 
-export default async function BuildingPage({ params }: { params: Slug }) {
+export default async function BuildingPage({ params: _params }: { params: Promise<Slug> }) {
+  const params = (await _params);
   const building = allBuildings.features.find(f => f.id === params.buildingId) as BuildingPointFeature;
   if (!building || !building.properties.indoorMap) {
     return <div>Building not found</div>;
@@ -29,8 +31,6 @@ export default async function BuildingPage({ params }: { params: Slug }) {
       src: `/indoor/${building.id}/${i}.svg`
     });
   }
-
-  const Map = dynamic(() => import("./components/map/Map"), { ssr: false });
 
 
   return <div className={styles.container}>

@@ -1,12 +1,13 @@
 import { createResponse, isOGCResponseSuccess } from "@/app/(ogc)/responses";
 
 interface Props {
-  params: {
+  params: Promise<{
     collectionId: string;
-  };
+  }>;
 }
 
-export default async function Page({ params: { collectionId } }: Props) {
+export default async function Page({ params }: Props) {
+  const { collectionId } = await params;
   const ogcCollectionInfoPageData = createResponse("/collections/{collectionId}", collectionId);
 
   return isOGCResponseSuccess(ogcCollectionInfoPageData) ? (

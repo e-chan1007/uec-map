@@ -1,6 +1,7 @@
 import { Noto_Sans_JP } from "next/font/google";
 
 import "./globals.css";
+import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import styles from "./layout.module.scss";
 
 import type { Metadata } from "next";
@@ -15,7 +16,7 @@ export default function RootLayout({ children }: {
   return (
     <html lang="ja">
       <body className={notoSansJP.className}>
-        {children}
+        <NuqsAdapter>{children}</NuqsAdapter>
       </body>
     </html>
   );

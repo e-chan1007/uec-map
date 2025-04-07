@@ -6,3 +6,9 @@
 .map-popup-pre {
   white-space: pre-wrap;
 }
+
+.popup {
+  & h1 {
+    line-height: 1.2;
+  }
+}

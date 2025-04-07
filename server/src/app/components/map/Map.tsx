@@ -6,12 +6,8 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { useQueryState } from "nuqs";
 import MapLibre, { Layer, GeolocateControl, Source, Marker, Popup } from "react-map-gl/maplibre";
 
-
 import styles from "./Map.module.css";
-
-
-import type { Feature } from "geojson";
-import type { MapLayerTouchEvent, MapRef } from "react-map-gl/maplibre";
+import type { MapLayerMouseEvent, MapLayerTouchEvent, MapRef } from "react-map-gl/maplibre";
 
 import allBuildings from "@/assets/list.json";
 import { nearestPoint } from "@/utils/nearestPoint";
@@ -21,6 +17,7 @@ export default function Map() {
   const mapRef = useRef<MapRef>(null);
 
   const [pinId, setPinId] = useQueryState("pin");
+  const [pinLngLat, setPinLngLat] = useQueryState("pinlnglat");
 
   const [cursor, setCursor] = useState<string>("auto");
   const onMouseEnter = useCallback(() => setCursor("pointer"), []);
@@ -39,10 +36,45 @@ export default function Map() {
       setPinPos(e.lngLat);
     }, 1000);
   }, []);
+
+  const onRightClick = useCallback((e: MapLayerMouseEvent) => {
+    setPinId(null);
+    setPinPos(e.lngLat);
+  }, []);
   const onTouchEnd = useCallback(() => {
     if (timer.current) {
       clearTimeout(timer.current);
       timer.current = null;
+    }
+  }, []);
+
+  useEffect(() => {
+    if (pinLngLat) {
+      const [lng, lat] = pinLngLat.split(",").map(Number);
+      setPinPos({ lng, lat });
+    }
+  }, []);
+  useEffect(() => {
+    if (pinPos && !pinId) {
+      setPinLngLat(`${pinPos.lng.toFixed(4)},${pinPos.lat.toFixed(4)}`);
+    } else {
+      setPinLngLat(null);
+    }
+  }, [pinId, pinPos]);
+
+  const onClick = useCallback((e: MapLayerMouseEvent) => {
+    if(e.originalEvent.button !== 0) return;
+    const features = mapRef.current?.queryRenderedFeatures(e.point, { layers: ["building", "building_sub"] });
+    if (features && features.length > 0) {
+      const _buildingFeature = features[0];
+      const buildingFeature = allBuildings.features.find(f => f.properties["name"] === _buildingFeature.properties["name"] && f.properties["area"] === _buildingFeature.properties["uec:area"]);
+      const id = buildingFeature?.id;
+      setPinPos(null);
+      if (id && id !== pinId) {
+        setPinId(id as string);
+      } else {
+        setPinId(null);
+      }
     }
   }, []);
 
@@ -59,13 +91,13 @@ export default function Map() {
   const MapPin = memo(function MapPin({ pos } : {pos: { lat: number, lng: number } | null}) {
     if (!pos) return null;
     const nearest = nearestPoint([pos.lng, pos.lat]);
-    mapRef.current?.flyTo({ center: [pos.lng, pos.lat], zoom: 17 });
+    mapRef.current?.flyTo({ center: [pos.lng, pos.lat], curve: 1 });
     return (<>
       <Marker latitude={pos.lat} longitude={pos.lng} />
       <Popup latitude={pos.lat} longitude={pos.lng} offset={32} onClose={() => {
         setPinPos(null);
         if (pinId) setPinId(null);
-      }}>
+      }} className={styles.popup}>
         <h1>{nearest.properties.name}{!pinId && "付近"}</h1>
         {/* <Button>共有する</Button> */}
       </Popup>
@@ -76,7 +108,6 @@ export default function Map() {
     <>
       <div className={styles.map}>
         <MapLibre
-          antialias
           reuseMaps
           attributionControl={false}
           ref={mapRef}
@@ -88,6 +119,8 @@ export default function Map() {
           interactiveLayerIds={["building", "building_sub", "external", "gate"]}
           maxZoom={20}
           cursor={cursor}
+          onContextMenu={onRightClick}
+          onClick={onClick}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
           onTouchStart={onTouchStart}
@@ -143,7 +176,8 @@ export default function Map() {
               type="fill"
               minzoom={14}
               filter={["in", "building", "university", "sports_hall"]}
-              paint={{ "fill-color": "#17288b" }}/>
+              paint={{ "fill-color": "#17288b" }}
+            />
             <Layer
               id="external"
               type="circle"

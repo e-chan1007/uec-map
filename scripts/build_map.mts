@@ -58,7 +58,7 @@ import type { BuildingPointFeature } from "../server/src/types/building";
 
       if (data.properties.name.match(/^[東西]/)) data.properties.score++;
       if (data.properties.name.match(/棟$/)) data.properties.score+=5;
-      if (data.properties.name.match(/号館$/)) data.properties.score++;
+      if (data.properties.name.match(/号館/)) data.properties.score++;
       if (data.properties.name.match(/体育館|講堂|保健|大学会館|本館/)) data.properties.score+=3;
       if (data.properties.name.match(/ドーム|課外/)) data.properties.score+=1;
       if (data.properties.name.match(/プール|テニス|弓道|職員|保育/)) data.properties.score-=10;

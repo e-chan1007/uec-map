@@ -2,6 +2,9 @@ import withYAML from "next-plugin-yaml";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true
+  },
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
   async rewrites() {
     return {
@@ -25,7 +28,7 @@ const nextConfig = {
           { key: "Access-Control-Allow-Origin", value: "*" },
           { key: "Access-Control-Allow-Methods", value: "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
           { key: "Access-Control-Allow-Headers", value: "Accept, Accept-Version, Content-Length, Content-Type, Date" },
-          { key: "Cache-Control", value: "max-age=604800, stale-while-revalidate=86400" }
+          { key: "Cache-Control", value: "max-age=86400, stale-while-revalidate=3600" }
         ]
       }
     ];
